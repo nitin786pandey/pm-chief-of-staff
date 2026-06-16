@@ -1,0 +1,35 @@
+{
+  "name": "pm-chief",
+  "version": "0.1.0",
+  "description": "AI Chief of Staff for PMs — scheduled briefs, persistent memory, and connected tools via Claude Code",
+  "bin": {
+    "pm-chief": "./bin/pm-chief.js"
+  },
+  "scripts": {
+    "test": "node bin/pm-chief.js --version"
+  },
+  "keywords": [
+    "pm",
+    "product-management",
+    "claude",
+    "claude-code",
+    "ai",
+    "mcp",
+    "chief-of-staff"
+  ],
+  "author": "nitin786pandey",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "inquirer": "^10.1.0",
+    "node-cron": "^3.0.3",
+    "dotenv": "^16.4.5",
+    "@anthropic-ai/sdk": "^0.26.0",
+    "fs-extra": "^11.2.0",
+    "which": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "type": "module"
+}

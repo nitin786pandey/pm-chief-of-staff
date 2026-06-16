@@ -1,4 +1,13 @@
-# PM Chief of Staff — AI Workflow Showcase
+# PM Chief of Staff
+
+> An AI Chief of Staff for product managers — scheduled morning briefs, evening debriefs, persistent memory, and connected tools via Claude Code.
+
+```bash
+npm install -g pm-chief
+cd your-pm-workspace
+pm-chief init
+# then open Claude Code and run /onboard
+```
 
 > **What this is:** A live, working system where AI acts as a Chief of Staff across my entire product management workflow — connected to real tools, governed by an Operating Contract, running on a schedule, and maintaining persistent memory across days and weeks.
 >
