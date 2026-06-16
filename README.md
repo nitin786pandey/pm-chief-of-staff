@@ -86,12 +86,12 @@ A Python validator runs after every write. It fails on missing required sections
 
 | Section | What it shows |
 |---------|--------------|
-| [`01-PM-OS/`](./01-PM-OS/overview.md) | Full PM OS overview — memory layer, detection rules, write ownership, validation |
-| [`01-PM-OS/sample-morning-brief.md`](./01-PM-OS/sample-morning-brief.md) | Sample brief with system alerts, suggested replies, ⚡ leverage priority |
-| [`01-PM-OS/sample-evening-debrief.md`](./01-PM-OS/sample-evening-debrief.md) | Sample debrief with reconfirmation pass, detection checks, memory write-back |
-| [`01-PM-OS/sample-memory-files/`](./01-PM-OS/sample-memory-files/) | Open Loops, Decision Ledger, Risk Register with cross-referenced IDs |
-| [`02-Connected-Tools/`](./02-Connected-Tools/connected-tools.md) | How the AI reads/writes across each connected tool |
-| [`03-Competitive-Intel/`](./03-Competitive-Intel/overview.md) | Automated daily competitor signal harvesting + weekly synthesis pipeline |
+| [`pm-os-samples/`](./pm-os-samples/overview.md) | Full PM OS overview — memory layer, detection rules, write ownership, validation |
+| [`pm-os-samples/sample-morning-brief.md`](./pm-os-samples/sample-morning-brief.md) | Sample brief with system alerts, suggested replies, ⚡ leverage priority |
+| [`pm-os-samples/sample-evening-debrief.md`](./pm-os-samples/sample-evening-debrief.md) | Sample debrief with reconfirmation pass, detection checks, memory write-back |
+| [`pm-os-samples/sample-memory-files/`](./pm-os-samples/sample-memory-files/) | Open Loops, Decision Ledger, Risk Register with cross-referenced IDs |
+| [`connected-tools/`](./connected-tools/connected-tools.md) | How the AI reads/writes across each connected tool |
+| [`competitive-intel/`](./competitive-intel/overview.md) | Automated daily competitor signal harvesting + weekly synthesis pipeline |
 | [`SHOWCASE.md`](./SHOWCASE.md) | Full narrative — start here |
 
 ---

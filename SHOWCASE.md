@@ -24,7 +24,7 @@ Every morning, a brief is waiting for me — already pulled from my open commitm
 
 ## The Architecture
 
-### Layer 1 — Connected Tools
+### Layer 1 — connected-tools
 
 Claude has live read/write access to the tools I use every day:
 
@@ -183,7 +183,7 @@ Beyond scheduled runs, I can invoke specialized workflows:
 
 ---
 
-## The Competitive Intelligence System
+## The competitive-intelligence System
 
 Separate from PM OS but integrated with it, a competitive intel pipeline runs automatically:
 
@@ -229,9 +229,9 @@ When a competitive signal is strategically relevant, it's linked to PM OS entrie
 
 ## Explore the Samples
 
-- [PM OS — Full overview, detection rules, and validation →](./01-PM-OS/overview.md)
-- [Sample Morning Brief →](./01-PM-OS/sample-morning-brief.md)
-- [Sample Evening Debrief (with reconfirmation pass + detection checks) →](./01-PM-OS/sample-evening-debrief.md)
-- [Sample memory files →](./01-PM-OS/sample-memory-files/)
-- [Connected Tools →](./02-Connected-Tools/connected-tools.md)
-- [Competitive Intel Pipeline →](./03-Competitive-Intel/overview.md)
+- [PM OS — Full overview, detection rules, and validation →](./pm-os-samples/overview.md)
+- [Sample Morning Brief →](./pm-os-samples/sample-morning-brief.md)
+- [Sample Evening Debrief (with reconfirmation pass + detection checks) →](./pm-os-samples/sample-evening-debrief.md)
+- [Sample memory files →](./pm-os-samples/sample-memory-files/)
+- [connected-tools →](./connected-tools/connected-tools.md)
+- [competitive-intel Pipeline →](./competitive-intel/overview.md)
