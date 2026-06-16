@@ -1,0 +1,12 @@
+# Showcase content — not needed in the npm package
+pm-os-samples/
+connected-tools/
+competitive-intel/
+Daily Briefs/
+SHOWCASE.md
+.claude/onboard/
+
+# Dev
+.env
+.pm-chief/
+PM OS/
