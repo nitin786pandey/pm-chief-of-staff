@@ -37,11 +37,37 @@ export async function init() {
     default: Intl.DateTimeFormat().resolvedOptions().timeZone
   });
 
-  // Collect Anthropic API key
-  const apiKey = await input({
-    message: 'Anthropic API key (stored in .env, never committed):',
-    validate: v => v.startsWith('sk-ant-') ? true : 'Key should start with sk-ant-'
-  });
+  // Check ~/.credentials/anthropic.env for existing key
+  const globalCredsDir = path.join(process.env.HOME, '.credentials');
+  const globalAnthropicEnv = path.join(globalCredsDir, 'anthropic.env');
+  let apiKey = '';
+
+  if (await fs.pathExists(globalAnthropicEnv)) {
+    const envContent = await fs.readFile(globalAnthropicEnv, 'utf8');
+    const match = envContent.match(/^ANTHROPIC_API_KEY=(.+)$/m);
+    if (match && match[1].trim()) {
+      apiKey = match[1].trim();
+      console.log(chalk.green('✓ Found ANTHROPIC_API_KEY in ~/.credentials/anthropic.env'));
+    }
+  }
+
+  if (!apiKey) {
+    apiKey = await input({
+      message: 'Anthropic API key (will be stored in .env, never committed):',
+      validate: v => v.startsWith('sk-ant-') ? true : 'Key should start with sk-ant-'
+    });
+    // Offer to save to global credentials store
+    if (await fs.pathExists(globalCredsDir)) {
+      const saveGlobal = await confirm({
+        message: `Save to ~/.credentials/anthropic.env for reuse across projects?`,
+        default: true
+      });
+      if (saveGlobal) {
+        await fs.writeFile(globalAnthropicEnv, `ANTHROPIC_API_KEY=${apiKey}\n`);
+        console.log(chalk.green('✓ Saved to ~/.credentials/anthropic.env'));
+      }
+    }
+  }
 
   console.log(chalk.dim('\nScaffolding workspace...'));
 

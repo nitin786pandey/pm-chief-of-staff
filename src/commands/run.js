@@ -6,6 +6,12 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
+// Fallback: load from ~/.credentials/anthropic.env if not in local .env
+if (!process.env.ANTHROPIC_API_KEY) {
+  const globalEnv = path.join(process.env.HOME, '.credentials', 'anthropic.env');
+  if (fs.pathExistsSync(globalEnv)) dotenv.config({ path: globalEnv });
+}
+
 const VALID_RUNS = ['morning', 'evening', 'weekly'];
 
 export async function run(runType) {
