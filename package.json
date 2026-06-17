@@ -1,6 +1,6 @@
 {
   "name": "pm-chief",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "AI Chief of Staff for PMs — scheduled briefs, persistent memory, and connected tools via Claude Code",
   "bin": {
     "pm-chief": "bin/pm-chief.js"
